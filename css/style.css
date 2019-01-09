@@ -1,0 +1,210 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #202020;
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+/* Showcase */
+#showcase {
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/casino-showcase.png);
+    background-color: rgba(33, 1, 63, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#showcase .container {
+    margin-top: 20vh;
+    text-shadow: 3px 5px #693300cc
+}
+
+#showcase h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+#showcase h2 {
+    font-size: 1rem;
+}
+
+/* Section */
+.section {
+    padding: 2rem 0;
+}
+
+.section-head {
+    font-size: 2.5rem;
+    margin: 0;
+
+}
+
+.section h3 {
+    font-size: 2rem;
+}
+
+/* Buttons */
+
+.play-button {
+    background-color: rgb(150, 0, 0);
+    padding: 1.4rem 4rem;
+    margin-top: 30px;
+    border-radius: 40px;
+    color: #eee;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.play-button:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 0, 0);
+}
+
+
+/* Utility */
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1180px;
+    padding: 0 3.5rem;
+}
+
+.lead {
+    font-size: 1.6rem;
+}
+
+.background-light {
+    background-color: #eee;
+    color: #333;
+}
+
+.background-dark {
+    background-color: #202020;
+    color: #eee;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+}
+
+nav li:hover {
+    transform: scale(1.3);
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .hide-small {
+        display: none;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover {
+        background: #444;
+    }
+
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
